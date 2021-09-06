@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Explore Japan!</title>
+        <meta name="description" content="We are going to report that our trip in Japan!" >
+        <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+        <link href="css/reset.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|M+PLUS+Rounded+1c:400,500&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+    
+        <!-- JS -->
+        <script src="js/jquery.js"></script>
+        <script defer src="js/jquery.flexslider.js"></script>
+        <!-- <script src="js/jquery.japan-map.min.js"></script> -->
+        <script src="js/jquery.japan-map.js"></script>
+        <!-- <script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script> -->
+        
+    <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/b8a7fea4d4.js"></script>
+
+        <script type="text/javascript">
+            $(window).load(function(){
+                $('.flexslider').flexslider({
+                    animation: "fade",
+                    slideshow: true,
+                    slideshowSpeed:4000,
+                    animationSpeed:1000,
+                    animationLoop: true,
+                    randomize: false,
+                    controlNav: true,
+                    directionNav: true,
+                });
+            });
+        </script>
+
+    </head>
+
+	<body>
+        <div id="wrap">
+            <header>
+            <!-- ロゴ -->
+                <h1><img src="images/logo_explore.png" alt="Explore Japan" class="logo"> </h1>
+            </header>
+
+        <!--=============================
+        　２．ナビゲーション
+        =============================-->
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+        <!--=============================
+        　３．メインビジュアル
+        =============================-->
+        <div class="flexslider">
+            <ul class="slides"> 
+                <li>
+                    <img src="images/slide01.jpg" alt="">
+                    <!-- <p class="flex-caption" id="copy">Coffee first. <br>Schemes later.</p> -->
+                    <p class="flex-caption">Mt.Fuji,World heritage</p>
+                </li>
+                <li>
+                    <img src="images/slide2.jpg" alt="">
+                    <p class="flex-caption">Arashiyama,Kyoto</p>
+                </li>
+                <li>
+                    <img src="images/slide3_1.jpg" alt="">
+                    <p class="flex-caption">Blue lake,Hokkaido</p>
+                </li>
+                <li>
+                    <img src="images/slide4.jpg" alt="">
+                    <p class="flex-caption">Rainbow Bridge,Tokyo</p>
+                </li>
+                <li>
+                    <img src="images/slide5.jpg" alt="">
+                    <p class="flex-caption">Kinkakuji,Kyoto</p>
+                </li>
+                <li><img src="images/slide7.jpg" alt="">
+                    <p class="flex-caption">Asakusa and Shibuya,Tokyo</p>
+                </li>
+            </ul>
+        </div>
+
+        <!--=============================
+        　４．メイン
+        =============================-->
+
+        <div id="map-container-wrap">
+            <iframe src="map.html?canvasWidth=800" frameborder="0" scrolling="no" width="800" height="600" id="map800"></iframe>
+            <iframe src="map.html?canvasWidth=380" frameborder="0" scrolling="no" width="380" height="290" id="map380"></iframe>
+            </div>
+            
+        <div class="container">
+            <main>
+                <article class="post-home">
+                    <div class="date_title">
+                        <p class="post-date"><span>2021</span>3/30</p>
+                        <div class="post-title">
+                            <h2><a href="../area/obihiro.html">Fotune-tellor in Obihiro,Hokkaido</a></h2>
+                        </div>
+                    </div>
+                    <div class="post-thumb">
+                        <!-- <p class="post-date"><span>2021</span>3/30</p> -->
+                        <img class="post-img" src="images/blog/obihiro.jpg" alt="Obihiro">
+                    </div>
+                    <p class="post-desc">
+                        Obihiro is very countryside in Hokkaido.
+                        there are many nature and animals.
+                        And ...they have a fotune-teller! Please try once.They can tell you many advices you need.
+                        I went to there once then it was unbelivable they knew my past and future.
+                    </p>
+                    <p class="btn"><a href="../area/obihiro.html">continue</a></p>
+                </article>
+                <article class="post-home">
+                    <div class="date_title">
+                        <p class="post-date"><span>2021</span>12/28</p>
+                        <div class="post-title">
+                            <h2><a href="#">Okuwadani in Hakone,Kanagawa</a></h2>
+                        </div>
+                    </div>
+                    <div class="post-thumb">
+                        <img class="post-img" src="images/blog/Okuwadani.jpg" alt="Okuwadani">
+                    </div>
+                    <p class="post-desc">
+                        Have you ever seen an black egg?<br>
+                        There are black eggs in a Mountain, Okuwadani.
+                        We can eat in an cafe there or buy for suvenior. 
+                        Please try to one time! 
+                    </p>
+                    <p class="btn"><a href="#">continue</a></p>
+                </article>
+                <article class="post-home">
+                    <div class="date_title">
+                        <p class="post-date"><span>2017</span>9/9</p>
+                        <div class="post-title">
+                            <h2><a href="#">Go to see Maiko in Kyoto!</a></h2>
+                        </div>
+                    </div>
+                    <div class="post-thumb">
+                        <img class="post-img" src="images/blog/Maiko.jpg" alt="Maiko">
+                    </div>
+                    <p class="post-desc">
+                        "Maiko" and "Geiko" are female performers who perform music and dance on a stage or at a benquet.
+                        Maiko are apprentices usually between 15 and 20 years old who become geiko when they finish their trainning.
+                        In Kyoto, there are five kagai(geisha district).They live in okiya(teahouse which maiko and geiko belong to)
+                        to learn tranditional customs and performances.
+                    </p>
+                    <p class="btn"><a href="#">continue</a></p>
+                </article>
+                <article class="post-home">
+                    <div class="date_title">
+                        <p class="post-date"><span>2020</span>1/14</p>
+                        <div class="post-title">
+                            <h2><a href="#">Shibuya Sky in Shibuya,Tokyo</a></h2>
+                        </div>
+                    </div>
+                    <div class="post-thumb">
+                        <img class="post-img" src="images/blog/ShibuyaSky.jpg" alt="Shibuya Sky">
+                    </div>
+                    <p class="post-desc">
+                        Shibuya Sky is built in Novenber,2019.
+                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                        
+                    </p>
+                    <p class="btn"><a href="#">continue</a></p>
+                </article>
+
+                <ul class="pagination">
+                    <li><span class="current">1</span></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">&gt;</a></li>
+                </ul>
+            </main>
+
+            <aside>
+                <div class="side-box">
+                    <h3>Search</h3>
+                    <form method="get" action="#" class="search_container">
+                        <input type="text" size="25" placeholder="Keyword">
+                        <input type="submit" value="&#xf002">
+                    </form>
+                </div>
+
+                <div class="side-box">
+                    <h3>Category</h3>
+                    <ul>
+                        <li><a href="#">Castle</a></li>
+                        <li><a href="#">Food</a></li>
+                        <li><a href="#">Suvenior</a></li>
+                        <li><a href="#">Money</a></li>
+                        <li><a href="#">Train</a></li>
+                    </ul>
+                </div>
+<!-- 
+                <div class="side-box">
+                    <h3>Newsletter</h3>
+                    <p>We mail you when we have new things if you sign up!  </p>
+                    <form class="newsletter-form" action="#">
+                        <input type="email" placeholder="hello@example.com">
+                        <input type="submit" value="sign up">
+                    </form>
+                </div> -->
+
+                <div class="side-box popular-posts">
+                    <h3>Popular Posts</h3>
+                    <ul>
+                        <li><a href="#">Fotune-tellor in Obihiro,Hokkaido</a></li>
+                        <li><a href="#">Okuwadani in Hakone,Kanagawa</a></li>
+                        <li><a href="#">Onsen in Hakone,Kanagawa</a></li>
+                        <li><a href="#">Shibuya sky in Shibuya,Tokyo</a></li>
+                        <li><a href="#">Hateruma Island in Okinawa</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <footer>
+            <ul class="footer-nav">
+                <!-- <li><a href="https://twitter.com/">Twitter</a></li> -->
+                <!-- <li><a href="https://facebook.com/"> Facebook</a></li> -->
+                <!-- <li><a href="https://youtube.com/">YouTube</a></li> -->
+                <li><img class="insta" src="images/instagram_icon.png" alt="instagram"><a href="https://www.instagram.com/explore_japan_reiwa/"></a></li>
+            </ul>
+            <p><small>&copy; 2021 Explore Japan</small></p>
+        </footer>
+
+            <script>
+                $(function(){
+                
+                var $mapObj = $("#map");
+                $mapObj.on("load", function(){
+                // iframe読み込み後、iframe内のcanvasのサイズを取得し、iframeのサイズを設定する
+                var $iframeCanvas = $(‘iframe:first’).contents().find("#japan-map-container > canvas");
+                $mapObj.attr({
+                width : $iframeCanvas.attr("width"),
+                height : $iframeCanvas.attr("height")
+                });
+                });
+                });
+            </script>
+        </div>
+	</body>
+</html>
